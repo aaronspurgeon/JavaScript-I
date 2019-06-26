@@ -1,6 +1,6 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
-// ==== Challenge 1: Writing Objects ==== 
+// ==== Challenge 1: Writing Objects ====
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
@@ -11,46 +11,45 @@
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
 const example = {
-  "id": 0,
-  "name": "Example",
-  "email": "examples@you.edu",
-  "gender": "F"
-}
+  id: 0,
+  name: "Example",
+  email: "examples@you.edu",
+  gender: "F"
+};
 
 // Write your intern objects here:
 const mitziIntern = {
-  'id': 1,
-  'name': 'Mitzi',
-  'email': 'mmelloy0@psu.edu',
-  'gender': 'F'
-}
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F"
+};
 const kennanIntern = {
-  'id': 2,
-  'name': 'Kennan',
-  'email': 'kdiben1@tinypic.com',
-  'gender': 'M'
-}
+  id: 2,
+  name: "Kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "M"
+};
 const kevenIntern = {
-  'id': 3,
-  'name': 'Keven',
-  'email': 'kmummery2@wikimedia.org',
-  'gender': 'M'
-}
+  id: 3,
+  name: "Keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "M"
+};
 const gannieIntern = {
-  'id': 4,
-  'name': 'Gannie',
-  'email': 'gmartinson3@illinois.edu',
-  'gender': 'M'
-}
+  id: 4,
+  name: "Gannie",
+  email: "gmartinson3@illinois.edu",
+  gender: "M"
+};
 const antoniettaIntern = {
-  'id': 5,
-  'name': 'Antonietta',
-  'email': 'adaine5@samsung.com',
-  'gender': 'F'
-}
+  id: 5,
+  name: "Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "F"
+};
 
-
-// ==== Challenge 2: Reading Object Data ==== 
+// ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
@@ -68,9 +67,9 @@ console.log(gannieIntern.name);
 // Antonietta's Gender
 console.log(antoniettaIntern.gender);
 
-// ==== Challenge 3: Object Methods ==== 
+// ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-kennanIntern.speak = 'Hello, my name is Kennan!';
+kennanIntern.speak = "Hello, my name is Kennan!";
 console.log(kennanIntern.speak);
 // console.log(kennan.speak());
 
@@ -83,7 +82,7 @@ console.log(antoniettaIntern.multiplyNums(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
-// ==== Stretch Challenge: Nested Objects and the this keyword ==== 
+// ==== Stretch Challenge: Nested Objects and the this keyword ====
 
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
@@ -91,26 +90,26 @@ console.log(antoniettaIntern.multiplyNums(3, 4));
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
 const parent = {
-  'name': 'Susan',
-  'age': 70,
+  name: "Susan",
+  age: 70,
   sayName() {
-    return 'Hello, my name is ' + this.name
+    return "Hello, my name is " + this.name;
   },
-  'child': {
-    'name': 'George',
-    'age': 50,
+  child: {
+    name: "George",
+    age: 50,
     sayName() {
-      return 'Hello, my name is ' + this.name
+      return "Hello, my name is " + this.name;
     },
-    'grandchild': {
-      'name': 'Sam',
-      'age': 30,
+    grandchild: {
+      name: "Sam",
+      age: 30,
       sayName() {
-        return 'Hello, my name is ' + this.name
-      },
+        return "Hello, my name is " + this.name;
+      }
     }
   }
-}
+};
 
 // Log the parent object's name
 console.log(parent.name);
@@ -119,7 +118,7 @@ console.log(parent.name);
 console.log(parent.child.age);
 
 // Log the name and age of the grandchild
-console.log(parent.child.grandchild)
+console.log(parent.child.grandchild);
 
 // Have the parent speak
 console.log(parent.sayName());
